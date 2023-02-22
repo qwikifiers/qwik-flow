@@ -1,7 +1,10 @@
 {
-  "name": "qwik-flow",
+  "name": "@qwikifiers/qwik-flow",
   "version": "0.0.0",
   "description": "Qwik Control Flow Components",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "exports": "./src/index.js",
   "dependencies": {
