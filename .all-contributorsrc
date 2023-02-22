@@ -24,6 +24,21 @@
         "review",
         "ideas"
       ]
+    },
+    {
+      "login": "keuller",
+      "name": "Keuller Magalhaes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2074316?v=4",
+      "profile": "https://github.com/keuller",
+      "contributions": [
+        "code",
+        "test",
+        "infra",
+        "doc",
+        "maintenance",
+        "review",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
