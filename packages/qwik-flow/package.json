@@ -1,0 +1,11 @@
+{
+  "name": "qwik-flow",
+  "version": "0.0.0",
+  "description": "Qwik Control Flow Components",
+  "type": "module",
+  "exports": "./src/index.js",
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
