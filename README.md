@@ -7,8 +7,8 @@
   Use semantic control flow components in your <a href='https://github.com/BuilderIO/qwik'>Qwik</a> app.
   <br><br>
 
-  <a href='https://img.shields.io/npm/v/qwik-flow?label=npm%20version'>
-  <img src='https://img.shields.io/npm/v/qwik-flow?label=npm%20version' alt='qwik-flow npm'>
+  <a href='https://img.shields.io/npm/v/@qwikifiers/qwik-flow?label=npm%20version'>
+  <img src='https://img.shields.io/npm/v/@qwikifiers/qwik-flow?label=npm%20version' alt='@qwikifiers/qwik-flow npm'>
   </a>
   <a href='https://opensource.org/licenses/MIT'>
   <img src='https://img.shields.io/badge/License-MIT-green.svg' alt='MIT'>
@@ -35,7 +35,7 @@
 ## Installation
 
 ```console
-npm install -D qwik-flow
+npm install -D @qwikifers/qwik-flow
 ```
 
 ## Configuration

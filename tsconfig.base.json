@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "qwik-flow": ["packages/qwik-flow/src/index.ts"]
+      "@qwikifiers/qwik-flow": ["packages/qwik-flow/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
