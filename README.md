@@ -32,7 +32,7 @@
 - [License](#license)
 
 
-## Installation
+## Installation (NOT READY YET)
 
 ```console
 npm install -D @qwikifers/qwik-flow
