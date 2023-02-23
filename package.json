@@ -1,13 +1,15 @@
 {
   "name": "qwikifiers-project",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "commit": "git-cz",
+    "lint": "nx affected:lint --base=last-release",
+    "commit": "pnpx git-cz --disable-emoji",
     "test": "nx test qwik-flow"
   },
   "private": true,
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "@builder.io/qwik": "~0.19.1",
     "@builder.io/qwik-city": "~0.4.0",
     "@commitlint/cli": "^17.4.4",
@@ -39,6 +41,7 @@
     "prettier": "^2.8.4",
     "qwik-nx": "^0.11.1",
     "undici": "^5.20.0",
+    "tailwindcss": "^3.1.8",
     "vite": "~4.1.4",
     "vite-plugin-dts": "~1.7.3",
     "vite-plugin-eslint": "^1.8.1",

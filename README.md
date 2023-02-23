@@ -67,7 +67,7 @@ import { Switch, Case } from '@qwikifers/qwik-flow';
 
 const option = useSignal<string>('1');
 
-<Switch fallback={<div>Invalid option</div>}>
+<Switch default={() => <div>Invalid option</div>}>
   <Case when={option.value === '1'}>
     {() => <p>selected: 1 - Car</p>}
   </Case>
