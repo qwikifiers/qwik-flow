@@ -10,10 +10,10 @@ export default defineConfig({
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/packages/demo-app/client',
+        outDir: '../../dist/apps/demo-app/client',
       },
       ssr: {
-        outDir: '../../dist/packages/demo-app/server',
+        outDir: '../../dist/apps/demo-app/server',
       },
     }),
     tsconfigPaths({ root: '../../' }),

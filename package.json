@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "lint": "nx affected:lint --base=last-release",
     "commit": "pnpx git-cz --disable-emoji",
     "test": "nx test qwik-flow"
   },

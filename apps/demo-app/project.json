@@ -2,7 +2,7 @@
   "name": "demo-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "packages/demo-app/src",
+  "sourceRoot": "apps/demo-app/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
@@ -11,7 +11,7 @@
           "demo-app:build.client",
           "demo-app:build.ssr"
         ],
-        "outputPath": "dist/packages/demo-app"
+        "outputPath": "dist/apps/demo-app"
       },
       "configurations": {
         "preview": {}
@@ -20,15 +20,15 @@
     "build.client": {
       "executor": "@nrwl/vite:build",
       "options": {
-        "outputPath": "dist/packages/demo-app",
-        "configFile": "packages/demo-app/vite.config.ts"
+        "outputPath": "dist/apps/demo-app",
+        "configFile": "apps/demo-app/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nrwl/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/packages/demo-app"
+        "outputPath": "dist/apps/demo-app"
       },
       "configurations": {
         "preview": {
@@ -45,10 +45,10 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["../../coverage/packages/demo-app"],
+      "outputs": ["../../coverage/apps/demo-app"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/packages/demo-app"
+        "reportsDirectory": "../../coverage/apps/demo-app"
       }
     },
     "serve": {
@@ -62,14 +62,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "packages/demo-app"
+        "cwd": "apps/demo-app"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/demo-app/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/demo-app/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
