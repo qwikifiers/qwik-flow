@@ -8,13 +8,13 @@
   <br><br>
 
   <a href='https://img.shields.io/npm/v/@qwikifiers/qwik-flow?label=npm%20version'>
-  <img src='https://img.shields.io/npm/v/@qwikifiers/qwik-flow?label=npm%20version' alt='@qwikifiers/qwik-flow npm'>
+    <img src='https://img.shields.io/npm/v/@qwikifiers/qwik-flow?label=npm%20version' alt='@qwikifiers/qwik-flow npm'>
   </a>
   <a href='https://opensource.org/licenses/MIT'>
-  <img src='https://img.shields.io/badge/License-MIT-green.svg' alt='MIT'>
+    <img src='https://img.shields.io/badge/License-MIT-green.svg' alt='MIT'>
   </a>
   <a href='#contributors'>
-  <img src='https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square' alt='All Contributors'>
+    <img src='https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square' alt='All Contributors'>
   </a>
 
 </div>
@@ -32,26 +32,53 @@
 - [License](#license)
 
 
-## Installation (NOT READY YET)
+## Installation
 
 ```console
 npm install -D @qwikifers/qwik-flow
 ```
 
-## Configuration
-
-```ts
-
-```
-
 ## Usage
 
-```ts
+`If` component.
+```tsx
+import { If } from '@qwikifers/qwik-flow';
 
+const toogle = useSignal<boolean>(false);
 
+<If condition={toogle.value}>
+  {() => <Info message="Lorem ipsum dolores avec mi" />}
+</If>
 ```
 
+`For` component:
+```tsx
+import { For } from '@qwikifers/qwik-flow';
+
+<For each={people.value} fallback={() => (<div>No data found</div>)}>
+  {(item, key) => <Card key={key} data={item} />}
+</For>
+```
 <br/>
+
+`Switch`/`Case` components for more complex rendering logic.
+```tsx
+import { Switch, Case } from '@qwikifers/qwik-flow';
+
+const option = useSignal<string>('1');
+
+<Switch default={() => <div>Invalid option</div>}>
+  <Case when={option.value === '1'}>
+    {() => <p>selected: 1 - Car</p>}
+  </Case>
+  <Case when={option.value === '2'}>
+    {() => <p>selected: 2 - Airplane</p>}
+  </Case>
+  <Case when={option.value === '3'}>
+    {() => <p>selected: 3 - Train</p>}
+  </Case>
+</Switch>
+```
 
 ## Contributing
 
@@ -68,22 +95,6 @@ Thanks 🙏
 Be kind to each other and please read our [code of conduct](CODE_OF_CONDUCT.md).
 
 <br/>
-
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://hirez.io/?utm_source=github&utm_medium=link&utm_campaign=qwik-flow"><img src="https://avatars1.githubusercontent.com/u/1430726?v=4?s=100" width="100px;" alt="Shai Reznik"/><br /><sub><b>Shai Reznik</b></sub></a><br /><a href="https://github.com/qwikifiers/qwik-flow/commits?author=shairez" title="Code">💻</a> <a href="https://github.com/qwikifiers/qwik-flow/commits?author=shairez" title="Tests">⚠️</a> <a href="#infra-shairez" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/qwikifiers/qwik-flow/commits?author=shairez" title="Documentation">📖</a> <a href="#maintenance-shairez" title="Maintenance">🚧</a> <a href="https://github.com/qwikifiers/qwik-flow/pulls?q=is%3Apr+reviewed-by%3Ashairez" title="Reviewed Pull Requests">👀</a> <a href="#ideas-shairez" title="Ideas, Planning, & Feedback">🤔</a></td>
-    </tr>
-   
-  </tbody>
-</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
