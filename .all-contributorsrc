@@ -2,7 +2,7 @@
   "projectName": "qwik-flow",
   "projectOwner": "qwikifiers",
   "repoType": "github",
-  "repoHost": "https://github.com",
+  "repoHost": "https://github.com/qwikifiers",
   "files": [
     "README.md"
   ],
@@ -15,6 +15,21 @@
       "name": "Shai Reznik",
       "avatar_url": "https://avatars1.githubusercontent.com/u/1430726?v=4",
       "profile": "https://hirez.io/?utm_source=github&utm_medium=link&utm_campaign=qwik-flow",
+      "contributions": [
+        "code",
+        "test",
+        "infra",
+        "doc",
+        "maintenance",
+        "review",
+        "ideas"
+      ]
+    },
+    {
+      "login": "keuller",
+      "name": "Keuller Magalhaes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2074316?v=4",
+      "profile": "https://github.com/keuller",
       "contributions": [
         "code",
         "test",

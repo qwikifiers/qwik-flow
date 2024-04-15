@@ -1,14 +1,23 @@
 {
   "name": "@qwikifiers/qwik-flow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Qwik Control Flow Components",
+  "main": "./index.qwik.cjs",
+  "qwik": "./index.qwik.mjs",
   "publishConfig": {
     "access": "public"
   },
   "type": "module",
-  "exports": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./index.qwik.mjs",
+      "require": "./index.qwik.cjs"
+    }
+  },
   "dependencies": {
+    "@builder.io/qwik": "^0.19.0"
   },
   "peerDependencies": {
+    "@builder.io/qwik": ">=0.18.1"
   }
 }
